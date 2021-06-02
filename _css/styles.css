@@ -9,9 +9,11 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 100%;
+}
+.wrapper {
   overflow-x: hidden;
 }
 header {
@@ -24,6 +26,7 @@ header {
   background-color: var(--blue);
   display: flex;
   align-items: center;
+  overflow-x: hidden;
 }
 .prenavbarcontent {
   display: flex;
@@ -54,6 +57,7 @@ header {
   font-family: "Teko", sans-serif;
   justify-content: center;
   box-shadow: 1px 1px 5px rgb(186, 186, 186);
+  overflow-x: hidden;
 }
 .navcontent-wrap {
   justify-content: space-between;
@@ -206,9 +210,9 @@ header {
   padding: 0;
   /* background-color: gray; */
   min-height: 70vh;
+  /* min-height: 1200px; */
   max-width: 100%;
   position: relative;
-  /* overflow: visible; */
 }
 .inhibitors-contentwrap {
   padding-top: 3rem;
@@ -218,6 +222,7 @@ header {
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
+  min-height: 1200px;
 }
 .inhibitors-boxes {
   width: 60%;
@@ -247,7 +252,7 @@ header {
   flex-direction: column;
   flex-flow: wrap;
   align-content: space-between;
-  min-height: 400px;
+  min-height: 300px;
   /* text-align: center; */
   /* flex-wrap: wrap; */
   /* top: 1000px;
@@ -314,19 +319,24 @@ header {
 .bluegranules {
   position: absolute;
   height: 600px;
+  height: 37vw;
   left: 80%;
   top: 40%;
 }
 .purplegranules {
   position: absolute;
   height: 600px;
-  left: 0%;
+  height: 37vw;
+
+  left: -5%;
   top: -10%;
 }
 .greengranules {
   position: absolute;
   height: 600px;
-  left: 30%;
+  height: 37vw;
+
+  left: 35%;
   top: 80%;
 }
 #solubles {
@@ -337,6 +347,7 @@ header {
   min-height: 120vh;
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 .water {
   position: absolute;
