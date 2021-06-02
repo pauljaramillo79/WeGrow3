@@ -521,6 +521,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+.prefootercontent h2 {
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+}
+.prefootercontent h3 {
+  font-size: 0.9rem;
+}
 /* .prefootercontent p {
   margin: 0;
   position: absolute;
@@ -532,11 +539,36 @@ header {
   list-style: none;
 }
 .prefootercontent ul {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.footercontact {
+  padding-top: 2rem;
+}
+.pfoot1,
+.pfoot2 {
+  display: flex;
+}
+.pfoot1 div,
+.pfoot1 h2,
+.pfoot2 div,
+.pfoot2 h2 {
+  margin-right: 3rem;
+}
+.ftmediaicon {
+  margin-top: 3rem;
+  margin-right: 1rem;
+  width: 30px;
 }
 .footer-logo {
-  width: 120px;
-  height: 60px;
+  width: 130px;
+  height: 70px;
+  margin-bottom: 3rem;
+}
+.pfoot3 {
+  text-align: right;
+}
+.pfoot3 h1 {
+  font-size: 2rem;
 }
 footer {
   background-color: black;
