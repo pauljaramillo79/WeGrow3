@@ -24,7 +24,7 @@
       </section>
       <nav id="navbar">
         <div class="navcontent-wrap">
-          <img id="logo" src="./_images/logo-web.svg" alt="" />
+          <img id="logo" src="./_images/logo-flat.svg" alt="" />
           <ul class="nav-links">
             <!-- <li><a href="#home" id="homelink">HOME</a></li> -->
             <li><a href="#aboutUs">PRODUCTS</a></li>
@@ -280,86 +280,108 @@
     </section>
     <section id="services">
       <div class="servicescontent">
-        <div class="servicebox movingbox">
-          <img
-            class="serviceicon"
-            src="../_images/qualityassuranceicon.png"
-            alt=""
-          />
-          <h3>Quality Assurance</h3>
+        <div class="services-tagline">
+          <h2>About Us</h2>
           <p>
-            We do systematic inspections and product validation processes to
-            ensure products’ quality before we ever put them in the market.
-            Often we test it ourselves first via our own distribution channels
-            and in collaboration with our closest partners. On a regular basis,
-            we visit our suppliers, warehouses and load ports to audit
-            consistent quality. A final control layer comes from selected
-            independent inspectors surveying the manufacturing, storing,
-            packaging and container stuffing, certifying that quality &
-            quantities are in order.
+            We follow four pillars to deliver the most value to our partners and
+            end users.
           </p>
         </div>
+        <div class="serviceboxes">
+          <div class="servicebox movingbox">
+            <img
+              class="serviceicon"
+              src="../_images/qualityassuranceicon.png"
+              alt=""
+            />
+            <h3>Quality Assurance</h3>
+            <p>
+              We do systematic inspections and product validation processes to
+              ensure products’ quality before we ever put them in the market.
+              Often we test it ourselves first via our own distribution channels
+              and in collaboration with our closest partners. On a regular
+              basis, we visit our suppliers, warehouses and load ports to audit
+              consistent quality. A final control layer comes from selected
+              independent inspectors surveying the manufacturing, storing,
+              packaging and container stuffing, certifying that quality &
+              quantities are in order.
+            </p>
+          </div>
 
-        <div class="servicebox movingbox">
-          <img
-            class="serviceicon"
-            src="../_images/expertlogisticsicon.png"
-            alt=""
-          />
-          <h3>Expert Logistics</h3>
-          <p>
-            We are specialists in logistics with 20 years of experience actively
-            seeking custom solutions to ensure the most efficient & competitive
-            delivery. We put extra care in the quality of the labeling and
-            packaging, the carrier and the routes while maintaining attentive
-            customer service throughout the delivery process.
-          </p>
-        </div>
+          <div class="servicebox movingbox">
+            <img
+              class="serviceicon"
+              src="../_images/expertlogisticsicon.png"
+              alt=""
+            />
+            <h3>Expert Logistics</h3>
+            <p>
+              We are specialists in logistics with 20 years of experience
+              actively seeking custom solutions to ensure the most efficient &
+              competitive delivery. We put extra care in the quality of the
+              labeling and packaging, the carrier and the routes while
+              maintaining attentive customer service throughout the delivery
+              process.
+            </p>
+          </div>
 
-        <div class="servicebox movingbox">
-          <img
-            class="serviceicon"
-            src="../_images/enviromentalicon.png"
-            alt=""
-          />
-          <h3>Technology Serving the Environment</h3>
-          <p>
-            We select and partner with recognized manufacturers maintaining the
-            highest standards in quality, R&D and environmentally responsible
-            practices. In a world with limited and depleting water resources, we
-            strive to promote and implement the best products and solutions to
-            minimize the over application of nutrients and the resulting waste
-            which is negatively affecting ecosystems globally.
-          </p>
-        </div>
+          <div class="servicebox movingbox">
+            <img
+              class="serviceicon"
+              src="../_images/enviromentalicon.png"
+              alt=""
+            />
+            <h3>Technology Serving the Environment</h3>
+            <p>
+              We select and partner with recognized manufacturers maintaining
+              the highest standards in quality, R&D and environmentally
+              responsible practices. In a world with limited and depleting water
+              resources, we strive to promote and implement the best products
+              and solutions to minimize the over application of nutrients and
+              the resulting waste which is negatively affecting ecosystems
+              globally.
+            </p>
+          </div>
 
-        <div class="servicebox movingbox">
-          <img
-            class="serviceicon"
-            src="../_images/distributionicon.png"
-            alt=""
-          />
-          <h3>Distribution Focus</h3>
-          <p>
-            Our regional offices have a deep knowledge of the markets they
-            serve. Our multicultural teams are composed of members native to the
-            regions where we conduct business with close reach to every level of
-            the commercial chain. We put significant weight in using our local
-            expertise to identify the fertilization requirements, the
-            distribution challenges, and the logistics opportunities to deliver
-            value to our customer and suppliers.
-          </p>
+          <div class="servicebox movingbox">
+            <img
+              class="serviceicon"
+              src="../_images/distributionicon.png"
+              alt=""
+            />
+            <h3>Distribution Focus</h3>
+            <p>
+              Our regional offices have a deep knowledge of the markets they
+              serve. Our multicultural teams are composed of members native to
+              the regions where we conduct business with close reach to every
+              level of the commercial chain. We put significant weight in using
+              our local expertise to identify the fertilization requirements,
+              the distribution challenges, and the logistics opportunities to
+              deliver value to our customer and suppliers.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="prefooter">
       <div class="prefootercontent">
-        <p>PRIVACY</p>
+        <div class="pfoot1">
+          <h3>Our Products</h3>
+          <ul>
+            <li>Water solubles</li>
+            <li>Nitrogen Stabilizers</li>
+            <li>Bio-stimulants</li>
+            <li>Liquid Fertilizers</li>
+            <li>Organic Certified</li>
+          </ul>
+          <h3>About Us</h3>
+        </div>
+        <img class="footer-logo" src="../_images/logowhite.svg" alt="" />
       </div>
     </section>
     <footer>
       <div class="footer-content">
-        <p>WeGrow Copyright 2021 &#169;</p>
+        <p>PRIVACY | DISCLAIMER | WeGrow &#169; Copyright 2021</p>
       </div>
     </footer>
   </body>
@@ -388,14 +410,16 @@
       ) {
         // document.getElementById("#navbar").style.padding = "0px";
         // document.getElementById("navbar").style.padding = "10px 0px 0px 0px";
-        document.getElementById("logo").style.width = "70px";
-        document.getElementById("logo").style.height = "45px";
+        document.getElementById("logo").style.width = "130px";
+        document.getElementById("logo").style.height = "50px";
         document.getElementById("navbar").style.borderBottom =
           "1px dashed lightgray";
       } else {
         // document.getElementById("#navbar").style.padding = "0px";
         // document.getElementById("navbar").style.padding = "40px";
         document.getElementById("logo").style.width = "130px";
+        document.getElementById("logo").style.height = "70px";
+        document.getElementById("logo").style.width = "200px";
         document.getElementById("logo").style.height = "70px";
         document.getElementById("navbar").style.borderBottom = "none";
       }
