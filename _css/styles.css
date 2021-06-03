@@ -103,6 +103,7 @@ header {
   -webkit-mask-repeat: no-repeat;
   mask-image: url("../_images/mask2.svg");
   z-index: 2;
+  min-height: 800px;
 }
 .landing-contentwrap {
   width: 65%;
@@ -114,7 +115,7 @@ header {
 }
 .landing-tagline {
   position: relative;
-  height: 100vh;
+  min-height: 800px;
   width: 40%;
   /* left: 15%; */
   background-color: rgba(41, 41, 41, 0.8);
@@ -222,7 +223,7 @@ header {
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
-  min-height: 1200px;
+  /* min-height: 1200px; */
 }
 .inhibitors-boxes {
   width: 60%;
