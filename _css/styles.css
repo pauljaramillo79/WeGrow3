@@ -473,16 +473,19 @@ header {
   margin: auto;
 }
 .services-tagline {
-  width: 50%;
-  margin: auto;
+  /* width: 50%;
+  margin: auto; */
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
 }
 .services-tagline h2 {
   font-size: 3rem;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+
   border-bottom: var(--blue) solid 8px;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
 .serviceboxes {
   padding-top: 5rem;
@@ -620,7 +623,8 @@ footer {
     width: 45%;
   }
   .landing-header,
-  .inhibitors-tagline h2 {
+  .inhibitors-tagline h2,
+  .solubles-tagline h2 {
     font-size: 2.8rem;
   }
   .inhibitors-prodbox {
@@ -631,6 +635,12 @@ footer {
   }
   .landing-news {
     min-height: 12vw;
+  }
+  .services-tagline {
+    width: 100%;
+  }
+  .pfoot3 h1 {
+    font-size: 1.8rem;
   }
 }
 
