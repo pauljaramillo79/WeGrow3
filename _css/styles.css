@@ -129,7 +129,7 @@ header {
   width: 40%;
   transform: translate(0%, -70%);
   padding-top: 1rem;
-
+  min-height: 800px;
   /* opacity: 0.8; */
 }
 .newstitle {
@@ -724,6 +724,11 @@ footer {
   }
   .tagline-container button {
     width: 60%;
+  }
+  .landingcontent,
+  .landing-tagline,
+  .landing-news {
+    min-height: 900px;
   }
   /* .landing-header {
     font-size: 2rem;
