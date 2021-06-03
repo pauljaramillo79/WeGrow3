@@ -161,8 +161,9 @@ header {
 .tagline-container {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 13%;
+  position: absolute;
+  top: 15%;
+  /* transform: translate(-80%, 0); */
   height: 70%;
   width: 100%;
   padding: 0 2rem;
@@ -616,7 +617,8 @@ footer {
   .landing-tagline {
     width: 45%;
   }
-  .landing-header {
+  .landing-header,
+  .inhibitors-tagline h2 {
     font-size: 2.8rem;
   }
   .inhibitors-prodbox {
@@ -642,8 +644,18 @@ footer {
   .landing-tagline {
     width: 53%;
   }
-  .landing-header {
+  .landing-header,
+  .inhibitors-tagline h2,
+  .solubles-tagline h2 {
     font-size: 2.5rem;
+  }
+  .landing-contentwrap,
+  .inhibitors-contentwrap,
+  .solubles-contentwrap {
+    width: 75%;
+  }
+  .solubles-tagline h2 {
+    width: 35%;
   }
 }
 
@@ -676,7 +688,8 @@ footer {
   .landing-tagline {
     width: 62%;
   }
-  .landing-contentwrap {
+  .landing-contentwrap,
+  .inhibitors-contentwrap {
     width: 75%;
   }
 }
