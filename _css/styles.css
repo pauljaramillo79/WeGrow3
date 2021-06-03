@@ -701,6 +701,11 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .landingcontent,
+  .landing-tagline,
+  .landing-news {
+    min-height: 1100px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -725,11 +730,7 @@ footer {
   .tagline-container button {
     width: 60%;
   }
-  .landingcontent,
-  .landing-tagline,
-  .landing-news {
-    min-height: 900px;
-  }
+
   /* .landing-header {
     font-size: 2rem;
   } */
