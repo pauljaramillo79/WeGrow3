@@ -376,7 +376,7 @@ header {
   -webkit-mask-repeat: no-repeat;
   mask-image: url("../_images/solublesmask.svg");
   z-index: 2;
-  min-height: 700px;
+  min-height: 740px;
 }
 .solubles-contentwrap {
   font-family: "Noto Sans JP", sans-serif;
