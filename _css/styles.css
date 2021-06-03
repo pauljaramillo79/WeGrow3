@@ -124,7 +124,7 @@ header {
   /* display: block; */
   display: flex;
   flex-direction: row;
-  min-height: 10vw;
+  min-height: 13vw;
   /* background-color: white; */
   width: 40%;
   transform: translate(0%, -70%);
@@ -424,6 +424,9 @@ header {
   flex-direction: row;
   overflow-y: hidden;
 }
+.solublesproducts::-webkit-scrollbar {
+  display: none;
+}
 .product {
   background-color: white;
   display: flex;
@@ -634,7 +637,7 @@ footer {
     width: 50%;
   }
   .landing-news {
-    min-height: 12vw;
+    min-height: 13vw;
   }
   .services-tagline {
     width: 100%;
