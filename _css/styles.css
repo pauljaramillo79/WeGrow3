@@ -688,7 +688,7 @@ footer {
   .landing-news {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 800px;
     transform: translate(0%, 10%);
     min-width: 40%;
   }
