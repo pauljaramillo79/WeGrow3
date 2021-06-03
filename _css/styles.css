@@ -701,20 +701,22 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .landingcontent,
+  /* .landingcontent, */
   .landing-tagline,
   .landing-news {
     min-height: 1100px;
+  }
+  .landing-contentwrap,
+  .inhibitors-contentwrap,
+  .solubles-contentwrap,
+  .servicescontent {
+    width: 85%;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .landing-tagline {
     width: 62%;
-  }
-  .landing-contentwrap,
-  .inhibitors-contentwrap {
-    width: 75%;
   }
 }
 @media only screen and (max-width: 800px) {
