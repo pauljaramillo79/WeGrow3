@@ -93,7 +93,7 @@ header {
 .landingcontent {
   background: url("../_images/landing-100.jpg");
   width: 100vw;
-  max-height: 85vh;
+  /* max-height: 85vh; */
   position: relative;
   /* position: absolute;
   top: 2vh; */
@@ -365,17 +365,18 @@ header {
   background-size: cover;
 
   width: 100%;
-  min-height: 120vh;
+
   padding-top: 5rem;
   position: relative;
   /* position: absolute;
   top: 2vh; */
   background-size: cover;
   -webkit-mask-image: url("../_images/solublesmask.svg");
-  -webkit-mask-size: 120%;
+  -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
   mask-image: url("../_images/solublesmask.svg");
   z-index: 2;
+  min-height: 700px;
 }
 .solubles-contentwrap {
   font-family: "Noto Sans JP", sans-serif;
@@ -435,7 +436,8 @@ header {
   /* box-shadow: 5px 5px 1dav0px black; */
   padding: 3rem 1.5rem 1.5rem 1.5rem;
   border-radius: 1rem;
-  min-height: 380px;
+  max-height: 320px;
+  margin-bottom: 20rem;
 }
 .product h3 {
   font-size: 1.4rem;
@@ -651,11 +653,15 @@ footer {
   }
   .landing-contentwrap,
   .inhibitors-contentwrap,
-  .solubles-contentwrap {
+  .solubles-contentwrap,
+  .servicescontent {
     width: 75%;
   }
   .solubles-tagline h2 {
     width: 35%;
+  }
+  .solubles-tagline p {
+    width: 70%;
   }
 }
 
