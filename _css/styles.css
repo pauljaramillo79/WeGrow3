@@ -720,11 +720,20 @@ footer {
     font-size: 1.8rem;
   }
   #services {
-    min-height: 1250px;
+    min-height: 1300px;
     margin: auto;
+  }
+  .serviceboxhead {
+    min-height: 100px;
   }
   .servicebox {
     min-width: 45%;
+    min-height: 45%;
+
+    padding-bottom: 1rem;
+  }
+  .servicebox p {
+    padding: 3rem 3rem;
   }
 }
 
@@ -748,7 +757,8 @@ footer {
   .landing-contentwrap,
   .inhibitors-contentwrap,
   .solubles-contentwrap,
-  .servicescontent {
+  .servicescontent,
+  .prefootercontent {
     width: 75%;
   }
   .solubles-tagline h2 {
