@@ -27,9 +27,32 @@
           <img id="logo" src="./_images/logo-flat.svg" alt="" />
           <ul class="nav-links">
             <!-- <li><a href="#home" id="homelink">HOME</a></li> -->
-            <li><a href="#aboutUs">PRODUCTS</a></li>
-            <li><a href="#news">LEARNING</a></li>
-            <li><a href="#products">ABOUT US</a></li>
+            <li>
+              <a href="#products">PRODUCTS</a>
+              <ul id="dropdown">
+                <li>Macronutrients</li>
+                <li>Micronutrients</li>
+                <li>Nitrogen Stabilizers</li>
+                <li>Bio-stimulants</li>
+                <li>Liquid Fertilizers</li>
+                <li>Organic Certified</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#learning">LEARNING</a>
+              <ul id="dropdown2">
+                <li>Urease Inhibitors</li>
+                <li>Nitrification Inhibitors</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#aboutus">ABOUT US</a>
+              <ul id="dropdown3">
+                <li>Our History</li>
+                <li>Our Vision</li>
+                <li>Our Team</li>
+              </ul>
+            </li>
             <!-- <li><a href="#learning">CONTACT US</a></li> -->
             <!-- <li><a href="#contactUs">CONTACT US</a></li> -->
           </ul>
@@ -515,16 +538,23 @@
         // document.getElementById("navbar").style.padding = "10px 0px 0px 0px";
         document.getElementById("logo").style.width = "130px";
         document.getElementById("logo").style.height = "50px";
-        document.getElementById("navbar").style.borderBottom =
-          "1px dashed lightgray";
+        document.getElementById("dropdown").style.top = "50px";
+        document.getElementById("dropdown2").style.top = "50px";
+        document.getElementById("dropdown3").style.top = "50px";
+        // document.getElementById("navbar").style.borderBottom =
+        //   "1px dashed lightgray";
       } else {
         // document.getElementById("#navbar").style.padding = "0px";
         // document.getElementById("navbar").style.padding = "40px";
-        document.getElementById("logo").style.width = "130px";
+        // document.getElementById("logo").style.width = "130px";
         document.getElementById("logo").style.height = "70px";
         document.getElementById("logo").style.width = "200px";
         document.getElementById("logo").style.height = "70px";
-        document.getElementById("navbar").style.borderBottom = "none";
+        document.getElementById("dropdown").style.top = "72px";
+        document.getElementById("dropdown2").style.top = "72px";
+        document.getElementById("dropdown3").style.top = "72px";
+
+        // document.getElementById("navbar").style.borderBottom = "none";
       }
     }
   </script>
