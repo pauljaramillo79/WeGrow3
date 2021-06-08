@@ -27,9 +27,32 @@
           <img id="logo" src="./_images/logo-flat.svg" alt="" />
           <ul class="nav-links">
             <!-- <li><a href="#home" id="homelink">HOME</a></li> -->
-            <li><a href="#aboutUs">PRODUCTS</a></li>
-            <li><a href="#news">LEARNING</a></li>
-            <li><a href="#products">ABOUT US</a></li>
+            <li>
+              <a href="#products">PRODUCTS</a>
+              <ul id="dropdown">
+                <li>Macronutrients</li>
+                <li>Micronutrients</li>
+                <li>Nitrogen Stabilizers</li>
+                <li>Bio-stimulants</li>
+                <li>Liquid Fertilizers</li>
+                <li>Organic Certified</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#learning">LEARNING</a>
+              <ul id="dropdown2">
+                <li>Urease Inhibitors</li>
+                <li>Nitrification Inhibitors</li>
+              </ul>
+            </li>
+            <li>
+              <a href="#aboutus">ABOUT US</a>
+              <ul id="dropdown3">
+                <li>Our History</li>
+                <li>Our Vision</li>
+                <li>Our Team</li>
+              </ul>
+            </li>
             <!-- <li><a href="#learning">CONTACT US</a></li> -->
             <!-- <li><a href="#contactUs">CONTACT US</a></li> -->
           </ul>
@@ -209,9 +232,19 @@
                   placeholder="Search..."
                 />
               </div>
+              <div class="productcategories">
+                <ul>
+                  <li>Macronutrients</li>
+                  <li>Micronutrients</li>
+                  <li>Nitrogen Stabilizers</li>
+                  <li>Bio-stimulants</li>
+                  <li>Liquid Fertilizers</li>
+                  <li>Organic Certified</li>
+                </ul>
+              </div>
             </div>
-            <div class="solublesproducts">
-              <div class="product movingbox">
+            <div class="solublesproducts movingbox">
+              <div class="product">
                 <img class="bag" src="../_images/tmap.svg" alt="" />
                 <div class="proddescription">
                   <h3>Technical MAP</h3>
@@ -223,7 +256,7 @@
                   </p>
                 </div>
               </div>
-              <div class="product movingbox">
+              <div class="product">
                 <img class="bag" src="../_images/mkp.svg" alt="" />
                 <div class="proddescription">
                   <h3>MKP</h3>
@@ -235,7 +268,7 @@
                   </p>
                 </div>
               </div>
-              <div class="product movingbox">
+              <div class="product">
                 <img class="bag" src="../_images/cands.png" alt="" />
                 <div class="proddescription">
                   <h3>Calcium Nitrate</h3>
@@ -247,7 +280,7 @@
                   </p>
                 </div>
               </div>
-              <div class="product movingbox">
+              <div class="product">
                 <img class="bag" src="../_images/tmap.svg" alt="" />
                 <div class="proddescription">
                   <h3>Technical MAP</h3>
@@ -259,7 +292,7 @@
                   </p>
                 </div>
               </div>
-              <div class="product movingbox">
+              <div class="product">
                 <img class="bag" src="../_images/mkp.svg" alt="" />
                 <div class="proddescription">
                   <h3>MKP</h3>
@@ -271,7 +304,7 @@
                   </p>
                 </div>
               </div>
-              <div class="product movingbox">
+              <div class="product">
                 <img class="bag" src="../_images/cands.png" alt="" />
                 <div class="proddescription">
                   <h3>Calcium Nitrate</h3>
@@ -298,12 +331,14 @@
           </div>
           <div class="serviceboxes">
             <div class="servicebox movingbox">
-              <img
-                class="serviceicon"
-                src="../_images/qualityassuranceicon.png"
-                alt=""
-              />
-              <h3>Quality Assurance</h3>
+              <div class="serviceboxhead">
+                <img
+                  class="serviceicon"
+                  src="../_images/qualityassuranceicon.png"
+                  alt=""
+                />
+                <h3>Quality Assurance</h3>
+              </div>
               <p>
                 We do systematic inspections and product validation processes to
                 ensure products’ quality before we ever put them in the market.
@@ -318,12 +353,14 @@
             </div>
 
             <div class="servicebox movingbox">
-              <img
-                class="serviceicon"
-                src="../_images/expertlogisticsicon.png"
-                alt=""
-              />
-              <h3>Expert Logistics</h3>
+              <div class="serviceboxhead">
+                <img
+                  class="serviceicon"
+                  src="../_images/expertlogisticsicon.png"
+                  alt=""
+                />
+                <h3>Expert Logistics</h3>
+              </div>
               <p>
                 We are specialists in logistics with 20 years of experience
                 actively seeking custom solutions to ensure the most efficient &
@@ -335,12 +372,14 @@
             </div>
 
             <div class="servicebox movingbox">
-              <img
-                class="serviceicon"
-                src="../_images/enviromentalicon.png"
-                alt=""
-              />
-              <h3>Technology Serving the Environment</h3>
+              <div class="serviceboxhead">
+                <img
+                  class="serviceicon"
+                  src="../_images/enviromentalicon.png"
+                  alt=""
+                />
+                <h3>Technology Serving the Environment</h3>
+              </div>
               <p>
                 We select and partner with recognized manufacturers maintaining
                 the highest standards in quality, R&D and environmentally
@@ -353,12 +392,14 @@
             </div>
 
             <div class="servicebox movingbox">
-              <img
-                class="serviceicon"
-                src="../_images/distributionicon.png"
-                alt=""
-              />
-              <h3>Distribution Focus</h3>
+              <div class="serviceboxhead">
+                <img
+                  class="serviceicon"
+                  src="../_images/distributionicon.png"
+                  alt=""
+                />
+                <h3>Distribution Focus</h3>
+              </div>
               <p>
                 Our regional offices have a deep knowledge of the markets they
                 serve. Our multicultural teams are composed of members native to
@@ -374,65 +415,96 @@
       </section>
       <section id="prefooter">
         <div class="prefootercontent">
-          <div class="pfoot1">
-            <h2>SITEMAP</h2>
-            <div class="pfoot11">
-              <h3>Our Products</h3>
-              <ul>
-                <li>Water solubles</li>
-                <li>Nitrogen Stabilizers</li>
-                <li>Bio-stimulants</li>
-                <li>Liquid Fertilizers</li>
-                <li>Organic Certified</li>
-              </ul>
-              <h3>Learning</h3>
-              <ul>
-                <li>Urease Inhibitors</li>
-                <li>Nitrification Inhibitors</li>
-              </ul>
+          <div class="pfootlogoslogan">
+            <div class="slogan">
+              <h1>Grow sustainable.</h1>
+              <h1>Grow with us.</h1>
             </div>
-            <div>
-              <h3>About Us</h3>
-              <h3 class="footercontact">Contact Us</h3>
-              <img
-                class="ftmediaicon"
-                src="../_images/facebookicon.png"
-                alt=""
-              />
-              <img class="ftmediaicon" src="../_images/instaicon.png" alt="" />
+            <img class="footer-logo" src="../_images/logowhite.svg" alt="" />
+          </div>
+          <div class="pfoottext">
+            <div class="pfoot1">
+              <h2>SITEMAP</h2>
+              <div class="pfoot11">
+                <h3>Our Products</h3>
+                <ul>
+                  <li>Water solubles</li>
+                  <li>Nitrogen Stabilizers</li>
+                  <li>Bio-stimulants</li>
+                  <li>Liquid Fertilizers</li>
+                  <li>Organic Certified</li>
+                </ul>
+                <h3>Learning</h3>
+                <ul>
+                  <li>Urease Inhibitors</li>
+                  <li>Nitrification Inhibitors</li>
+                </ul>
+              </div>
+              <div>
+                <h3>About Us</h3>
+                <h3 class="footercontact">Contact Us</h3>
+                <img
+                  class="ftmediaicon"
+                  src="../_images/facebookicon.png"
+                  alt=""
+                />
+                <img
+                  class="ftmediaicon"
+                  src="../_images/instaicon.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="pfoot2">
+              <h2>OFFICES</h2>
+              <div class="pfoot21">
+                <h3>Switzerland - HQ</h3>
+                <ul>
+                  <li>Zurcherstrasse 68</li>
+                  <li>8800 Thalwil</li>
+                  <li>Switzerland</li>
+                </ul>
+                <h3>Americas</h3>
+                <ul>
+                  <li>1000 North Ashley Dr.</li>
+                  <li>Suite 410</li>
+                  <li>Tampa FL, 33602</li>
+                  <li>USA</li>
+                </ul>
+              </div>
+              <div class="pfoot22">
+                <h3>Brazil</h3>
+                <ul>
+                  <li>Rua Casa do Ator</li>
+                  <li>No. 1.117, sala 153</li>
+                  <li>Villa Olimpia</li>
+                  <li>Sao Paulo</li>
+                  <li>Brazil</li>
+                </ul>
+                <h3>Spain</h3>
+                <ul>
+                  <li>Calle Villalar 4</li>
+                  <li>28001 Madrid</li>
+                  <li>Spain</li>
+                </ul>
+              </div>
+              <div class="pfoot23">
+                <h3>China</h3>
+                <ul>
+                  <li>Beijing International Hotel</li>
+                  <li>Room 605-606</li>
+                  <li>No. 9 Jian Guo Men Nei Ave.</li>
+                  <li>Dongcheng District</li>
+                  <li>100005 Beijing</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="pfoot2">
-            <h2>OFFICES</h2>
-            <div class="pfoot21">
-              <h3>WeGrow AG</h3>
-              <ul>
-                <li>Zurcherstrasse 68</li>
-                <li>8800 Thalwil</li>
-                <li>Switzerland</li>
-              </ul>
-              <h3>WeGrow LLC</h3>
-              <ul>
-                <li>1000 North Ashley Drive</li>
-                <li>Suite 410</li>
-                <li>Tampa FL, 33602</li>
-                <li>USA</li>
-              </ul>
-            </div>
-            <div class="pfoot22">
-              <h3>A.Q. WeGrow, S.L.</h3>
-              <ul>
-                <li>Calle Villalar 4,</li>
-                <li>28001 Madrid</li>
-                <li>Spain</li>
-              </ul>
-            </div>
-          </div>
-          <div class="pfoot3">
+          <!-- <div class="pfoot3">
             <img class="footer-logo" src="../_images/logowhite.svg" alt="" />
             <h1>Grow sustainable.</h1>
             <h1>Grow with us.</h1>
-          </div>
+          </div> -->
         </div>
       </section>
       <footer>
@@ -469,16 +541,23 @@
         // document.getElementById("navbar").style.padding = "10px 0px 0px 0px";
         document.getElementById("logo").style.width = "130px";
         document.getElementById("logo").style.height = "50px";
-        document.getElementById("navbar").style.borderBottom =
-          "1px dashed lightgray";
+        document.getElementById("dropdown").style.top = "50px";
+        document.getElementById("dropdown2").style.top = "50px";
+        document.getElementById("dropdown3").style.top = "50px";
+        // document.getElementById("navbar").style.borderBottom =
+        //   "1px dashed lightgray";
       } else {
         // document.getElementById("#navbar").style.padding = "0px";
         // document.getElementById("navbar").style.padding = "40px";
-        document.getElementById("logo").style.width = "130px";
+        // document.getElementById("logo").style.width = "130px";
         document.getElementById("logo").style.height = "70px";
         document.getElementById("logo").style.width = "200px";
         document.getElementById("logo").style.height = "70px";
-        document.getElementById("navbar").style.borderBottom = "none";
+        document.getElementById("dropdown").style.top = "72px";
+        document.getElementById("dropdown2").style.top = "72px";
+        document.getElementById("dropdown3").style.top = "72px";
+
+        // document.getElementById("navbar").style.borderBottom = "none";
       }
     }
   </script>

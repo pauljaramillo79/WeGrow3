@@ -57,7 +57,7 @@ header {
   font-family: "Teko", sans-serif;
   justify-content: center;
   box-shadow: 1px 1px 5px rgb(186, 186, 186);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .navcontent-wrap {
   justify-content: space-between;
@@ -76,16 +76,82 @@ header {
 .nav-links {
   display: flex;
   list-style: none;
+  width: 40%;
+  height: 100%;
+  justify-content: space-between;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-links li {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 33%;
+  /* padding-left: 0.7rem; */
+  /* flex-flow: row-reverse; */
+  /* align-items: center; */
 }
 .nav-links li a {
+  display: flex;
+  align-items: center;
+  /* display: block; */
   font-size: 1.2rem;
   text-decoration: none;
-  padding-left: 5rem;
+  /* min-height: 100%; */
+  /* min-height: 70px; */
+  /* padding-left: 8rem; */
+  /* align-items: center; */
   color: rgb(125, 125, 125);
 }
-.nav-links li a:hover {
+/* .nav-links li a:hover {
   color: black;
+} */
+.nav-links #dropdown,
+.nav-links #dropdown2,
+.nav-links #dropdown3 {
+  display: none;
+  position: absolute;
+  flex-flow: row;
+  width: 200px;
+  top: 72px;
+  left: -7px;
+  z-index: 30;
+  overflow-y: visible;
+  background-color: rgba(228, 228, 228, 1);
 }
+.nav-links li:hover #dropdown,
+.nav-links li:hover #dropdown2,
+.nav-links li:hover #dropdown3 {
+  display: block;
+}
+#dropdown,
+#dropdown2,
+#dropdown3 {
+  transition: 0.5s;
+}
+#dropdown li,
+#dropdown2 li,
+#dropdown3 li {
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  color: rgb(125, 125, 125);
+  width: 100%;
+}
+
+#dropdown li:hover,
+#dropdown2 li:hover,
+#dropdown3 li:hover {
+  background-color: var(--green);
+  background-color: white;
+  color: var(--green);
+  border: solid 1px rgba(228, 228, 228, 1);
+  border-bottom: solid 1px rgba(228, 228, 228, 1);
+  cursor: pointer;
+}
+
 .landing {
   width: 100%;
   min-height: 100%;
@@ -129,7 +195,7 @@ header {
   width: 40%;
   transform: translate(0%, -70%);
   padding-top: 1rem;
-
+  /* min-height: 800px; */
   /* opacity: 0.8; */
 }
 .newstitle {
@@ -195,7 +261,7 @@ header {
   color: white;
   width: 40%;
   border-radius: 2rem;
-  border: 0px solid var(--blue);
+  border: 0px solid white;
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
   /* border: none; */
@@ -243,7 +309,9 @@ header {
   /* background: url(../_images/productBoxBg.svg); */
   background-repeat: repeat-y;
   background-size: cover;
-  box-shadow: 3px 2px 10px lightgray, 3px 2px 5px lightgray;
+  box-shadow: 3px 2px 3px lightgray, 3px 2px 5px lightgray;
+  /* box-shadow: 1px 1px 3px lightgray, 1px 1px 1px lightgray; */
+
   margin-right: 2rem;
   margin-bottom: 2rem;
   padding: 4rem 2rem 2rem 2rem;
@@ -262,7 +330,7 @@ header {
 }
 .inhibitors-prodbox:hover {
   background-color: rgba(228, 228, 228, 1);
-  box-shadow: 7px 7px 10px lightgray, 3px 2px 10px lightgray;
+  box-shadow: 4px 4px 5px lightgray, 4px 4px 7px lightgray;
   cursor: pointer;
 }
 .inhibitors-prodbox .icongroup {
@@ -350,6 +418,7 @@ header {
   width: 100%;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .water {
   position: absolute;
@@ -409,17 +478,38 @@ header {
   display: flex;
   /* text-align: center; */
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   align-items: center;
 }
 .searchproductinput {
   width: 50%;
   line-height: 30px;
   margin-left: 1rem;
-  padding: 0.5rem 1.3rem;
+  padding: 0.5rem 1.3rem 0rem 1.3rem;
   border-radius: 1.3rem;
   border: none;
 }
+.productcategories ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+.productcategories ul li {
+  padding: 0 2.5rem;
+  border-left: white 1px solid;
+}
+.productcategories ul li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+.productcategories ul li:last-child {
+  padding-right: 0;
+}
+
 .solublesproducts {
   display: flex;
   flex-direction: row;
@@ -430,11 +520,14 @@ header {
 .solublesproducts::-webkit-scrollbar{
   display: none;
 }
+.solublesproducts::-webkit-scrollbar {
+  display: none;
+}
 .product {
   background-color: white;
   display: flex;
   flex-direction: row;
-  flex-basis: 30%;
+  /* flex-basis: 30%; */
   min-width: 30%;
   /* padding: 1rem; */
   margin-right: 2rem;
@@ -442,8 +535,16 @@ header {
   /* box-shadow: 5px 5px 1dav0px black; */
   padding: 3rem 1.5rem 1.5rem 1.5rem;
   border-radius: 1rem;
-  max-height: 320px;
+  height: 320px;
+  margin: 1rem;
   margin-bottom: 25rem;
+  transition: transform 0.2s ease;
+}
+.product:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  /* background-color: gray; */
+  /* transition: linear; */
 }
 .product h3 {
   font-size: 1.1rem;
@@ -508,27 +609,41 @@ header {
   flex-direction: column;
   align-items: center;
   max-width: 23%;
-  padding: 2rem;
+  /* padding: 2rem; */
   box-shadow: 1px 1px 3px lightgray, 1px 1px 1px lightgray;
   /* margin-right: 2rem; */
   margin-bottom: 2rem;
-  padding: 4rem 3rem 3rem 3rem;
+  /* padding: 4rem 3rem 3rem 3rem; */
   border-radius: 1rem;
   font-family: "Noto Sans JP", sans-serif;
+  min-height: 650px;
 }
 .servicebox h3 {
   padding-bottom: 1rem;
   text-align: center;
-  border-bottom: var(--blue) solid 1px;
-  margin-bottom: 1rem;
+  /* border-bottom: var(--blue) solid 1px; */
+  /* margin-bottom: 1rem; */
 }
 .servicebox p {
   font-size: 0.85rem;
   text-align: center;
+  padding: 2rem 2.5rem;
 }
 .serviceicon {
   width: 3rem;
   margin-bottom: 1rem;
+}
+.serviceboxhead {
+  background-color: white;
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  min-height: 200px;
+  /* padding-bottom: 0; */
 }
 #prefooter {
   width: 100%;
@@ -543,7 +658,13 @@ header {
   min-height: 400px;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 0.8rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+.pfoottext {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -571,15 +692,37 @@ header {
 .footercontact {
   padding-top: 2rem;
 }
+.pfootlogoslogan {
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 4rem;
+}
+.pfootlogoslogan .slogan {
+  font-size: 1.5rem;
+  text-align: left;
+}
 .pfoot1,
 .pfoot2 {
   display: flex;
 }
+.pfoot2 {
+  width: 63%;
+}
 .pfoot1 div,
-.pfoot1 h2,
+.pfoot1 h2 {
+  margin-right: 3rem;
+}
 .pfoot2 div,
 .pfoot2 h2 {
-  margin-right: 3rem;
+  margin-left: 3rem;
+}
+.pfoot21,
+.pfoot22,
+.pfoot23 {
+  width: 32%;
 }
 .ftmediaicon {
   margin-top: 3rem;
@@ -589,14 +732,14 @@ header {
 .footer-logo {
   width: 130px;
   height: 70px;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
-.pfoot3 {
+/* .pfoot3 {
   text-align: right;
 }
 .pfoot3 h1 {
   font-size: 2rem;
-}
+} */
 footer {
   background-color: black;
   width: 100%;
@@ -641,13 +784,29 @@ footer {
     width: 50%;
   }
   .landing-news {
-    min-height: 12vw;
+    min-height: 13vw;
   }
   .services-tagline {
     width: 100%;
   }
   .pfoot3 h1 {
     font-size: 1.8rem;
+  }
+  #services {
+    min-height: 1300px;
+    margin: auto;
+  }
+  .serviceboxhead {
+    min-height: 100px;
+  }
+  .servicebox {
+    min-width: 45%;
+    min-height: 45%;
+
+    padding-bottom: 1rem;
+  }
+  .servicebox p {
+    padding: 3rem 3rem;
   }
 }
 
@@ -671,7 +830,8 @@ footer {
   .landing-contentwrap,
   .inhibitors-contentwrap,
   .solubles-contentwrap,
-  .servicescontent {
+  .servicescontent,
+  .prefootercontent {
     width: 75%;
   }
   .solubles-tagline h2 {
@@ -679,6 +839,10 @@ footer {
   }
   .solubles-tagline p {
     width: 70%;
+  }
+  #services {
+    min-height: 1400px;
+    margin: auto;
   }
 }
 
@@ -692,7 +856,7 @@ footer {
   .landing-news {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 800px;
     transform: translate(0%, 10%);
     min-width: 40%;
   }
@@ -705,15 +869,22 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  /* .landingcontent, */
+  .landing-tagline,
+  .landing-news {
+    min-height: 1100px;
+  }
+  .landing-contentwrap,
+  .inhibitors-contentwrap,
+  .solubles-contentwrap,
+  .servicescontent {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
   .landing-tagline {
     width: 62%;
-  }
-  .landing-contentwrap,
-  .inhibitors-contentwrap {
-    width: 75%;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -729,6 +900,7 @@ footer {
   .tagline-container button {
     width: 60%;
   }
+
   /* .landing-header {
     font-size: 2rem;
   } */
