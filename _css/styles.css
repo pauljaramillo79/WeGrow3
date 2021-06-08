@@ -124,7 +124,7 @@ header {
   /* display: block; */
   display: flex;
   flex-direction: row;
-  min-height: 10vw;
+  min-height: 13vw;
   /* background-color: white; */
   width: 40%;
   transform: translate(0%, -70%);
@@ -384,6 +384,7 @@ header {
   padding-top: 9rem;
   width: 65%;
   margin: auto;
+  /* padding-bottom: 2rem; */
 }
 
 .solubles-tagline h2 {
@@ -423,6 +424,11 @@ header {
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.solublesproducts::-webkit-scrollbar{
+  display: none;
 }
 .product {
   background-color: white;
@@ -440,9 +446,10 @@ header {
   margin-bottom: 25rem;
 }
 .product h3 {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
   margin-bottom: 1rem;
-  font-family: "Teko", sans-serif;
+  /* font-family: "Teko", sans-serif; */
   border-bottom: 2px solid var(--blue);
   color: var(--blue);
 }
