@@ -90,21 +90,35 @@ header {
   position: relative;
   align-items: center;
   width: 33%;
+  height:100%;
   /* padding-left: 0.7rem; */
   /* flex-flow: row-reverse; */
   /* align-items: center; */
 }
+
 .nav-links li a {
   display: flex;
   align-items: center;
   /* display: block; */
   font-size: 1.2rem;
   text-decoration: none;
+  width:100%;
+  height:100%;
   /* min-height: 100%; */
   /* min-height: 70px; */
   /* padding-left: 8rem; */
   /* align-items: center; */
   color: rgb(125, 125, 125);
+  padding-left:0.7rem;
+}
+.nav-links li a:hover{
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+  
+
+}
+#dropdown:hover, #dropdown2:hover, #dropdown3:hover{
+  border-top:3px solid var(--blue);
 }
 /* .nav-links li a:hover {
   color: black;
@@ -115,9 +129,9 @@ header {
   display: none;
   position: absolute;
   flex-flow: row;
-  width: 200px;
+  width: 100%;
   top: 72px;
-  left: -7px;
+  /* left: -7px; */
   z-index: 30;
   overflow-y: visible;
   background-color: rgba(228, 228, 228, 1);
@@ -766,6 +780,84 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 0.8rem;
+}
+
+.productcontainer{
+  font-family: "Noto Sans JP", sans-serif;
+position:relative;
+  width:75%;
+  margin:auto;
+  min-height:700px;
+  display:flex;
+  margin-top:0;
+  margin-bottom:10rem;
+}
+.productnav{
+  display: flex;
+  flex-direction: column;
+  /* min-height:400px; */
+  background-color: rgba(27, 27, 27, 0.6);
+  min-width:21%;
+  
+  color:white;
+
+}
+.productnav h1{
+  padding:3rem;
+  padding-bottom: 1rem;
+}
+.prodsearchbar{
+  padding:0 3rem;
+  margin-bottom:2rem;
+}
+.prodsearchbar .mediaicon {
+  margin-left: 0;
+}
+.prodsearchbar input {
+  padding:0.3rem;
+  border-radius: 0.7rem;
+  border:none
+}
+.prodnavmenu {
+  list-style: none;
+}
+.prodnavmenu li {
+  padding: 0.7rem 3rem;
+  border-bottom:1px dashed white;
+}
+.prodnavmenu li:hover{
+  background-color: white;
+  color:var(--green);
+  cursor: pointer;
+  border-right: 1px solid rgba(27, 27, 27, 0.6);
+  border-left: 1px solid rgba(27, 27, 27, 0.6);
+}
+.productlist{
+  display: flex;
+  flex-direction: column;
+  width:75%;
+  background-color: red;
+}
+.productitem {
+  display: flex;
+  flex-direction: row;
+  min-height: 250px;
+  width:100%;
+  background-color: white;
+}
+.productitem:hover {
+  background-color:rgb(224, 224, 224);
+  cursor: pointer;
+}
+.productbag{
+  width:20%;
+  margin:auto;
+  margin-left:7rem;
+  margin-bottom:2rem;
+}
+.productdetail{
+  width:70%;
+  margin:auto;
 }
 
 @media only screen and (max-width: 1800px) {
