@@ -90,7 +90,7 @@ header {
   position: relative;
   align-items: center;
   width: 33%;
-  height:100%;
+  height: 100%;
   /* padding-left: 0.7rem; */
   /* flex-flow: row-reverse; */
   /* align-items: center; */
@@ -102,23 +102,23 @@ header {
   /* display: block; */
   font-size: 1.2rem;
   text-decoration: none;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   /* min-height: 100%; */
   /* min-height: 70px; */
   /* padding-left: 8rem; */
   /* align-items: center; */
   color: rgb(125, 125, 125);
-  padding-left:0.7rem;
+  padding-left: 0.7rem;
 }
-.nav-links li a:hover{
+.nav-links li a:hover {
   color: var(--blue);
   border-bottom: 2px solid var(--blue);
-  
-
 }
-#dropdown:hover, #dropdown2:hover, #dropdown3:hover{
-  border-top:3px solid var(--blue);
+#dropdown:hover,
+#dropdown2:hover,
+#dropdown3:hover {
+  border-top: 3px solid var(--blue);
 }
 /* .nav-links li a:hover {
   color: black;
@@ -531,7 +531,7 @@ header {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.solublesproducts::-webkit-scrollbar{
+.solublesproducts::-webkit-scrollbar {
   display: none;
 }
 .solublesproducts::-webkit-scrollbar {
@@ -782,82 +782,127 @@ footer {
   font-size: 0.8rem;
 }
 
-.productcontainer{
+.productcontainer {
   font-family: "Noto Sans JP", sans-serif;
-position:relative;
-  width:75%;
-  margin:auto;
-  min-height:700px;
-  display:flex;
-  margin-top:0;
-  margin-bottom:10rem;
+  position: relative;
+  width: 75%;
+  margin: auto;
+  min-height: 700px;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 10rem;
 }
-.productnav{
+.productnav {
   display: flex;
   flex-direction: column;
   /* min-height:400px; */
-  background-color: rgba(27, 27, 27, 0.6);
-  min-width:21%;
-  
-  color:white;
+  background-color: rgba(27, 27, 27, 0.1);
+  min-width: 21%;
+  max-height: 550px;
+  color: var(--blue);
 
+  /* background-color: rgba(1, 1, 1, 0.5); */
 }
-.productnav h1{
-  padding:3rem;
+.productnav h1 {
+  padding: 3rem;
   padding-bottom: 1rem;
 }
-.prodsearchbar{
-  padding:0 3rem;
-  margin-bottom:2rem;
+.prodnavheader {
+  min-width: 100%;
+  min-height: 400px;
+  /* background-image: url(../_images/strawberries.jpg); */
+  background-size: contain;
+  background-image: url(../_images/blueberries.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+}
+.prodsearchbar {
+  padding: 0 3rem;
+  margin-bottom: 2rem;
 }
 .prodsearchbar .mediaicon {
   margin-left: 0;
 }
 .prodsearchbar input {
-  padding:0.3rem;
+  padding: 0.3rem;
   border-radius: 0.7rem;
-  border:none
+  border: none;
 }
 .prodnavmenu {
   list-style: none;
+  background-color: rgba(1, 1, 1, 0.7);
+  border-top: 1px white dashed;
 }
 .prodnavmenu li {
   padding: 0.7rem 3rem;
-  border-bottom:1px dashed white;
+  border-bottom: 1px dashed white;
+  color: white;
+  font-size: 0.9rem;
 }
-.prodnavmenu li:hover{
+.prodnavmenu li:hover {
   background-color: white;
-  color:var(--green);
+  color: var(--green);
   cursor: pointer;
   border-right: 1px solid rgba(27, 27, 27, 0.6);
   border-left: 1px solid rgba(27, 27, 27, 0.6);
 }
-.productlist{
+.productlist {
   display: flex;
   flex-direction: column;
-  width:75%;
+  width: 60%;
   background-color: red;
 }
 .productitem {
   display: flex;
   flex-direction: row;
   min-height: 250px;
-  width:100%;
+  width: 100%;
   background-color: white;
+  padding-right: 3rem;
 }
 .productitem:hover {
-  background-color:rgb(224, 224, 224);
+  background-color: rgb(224, 224, 224);
   cursor: pointer;
 }
-.productbag{
-  width:20%;
-  margin:auto;
-  margin-left:7rem;
-  margin-bottom:2rem;
+.productbag {
+  width: 20%;
+  margin: auto;
+  margin-left: 5rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
-.productdetail{
-  width:70%;
-  margin:auto;
+.productdetail {
+  width: 70%;
+  margin: auto;
+}
+.productdetail h3 {
+  color: var(--blue);
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.productdetail p {
+  font-size: 0.85rem;
+  padding-bottom: 0.5rem;
+}
+.productspecs {
+  width: 20%;
+  height: 400px;
+  background-color: var(--blue);
+  padding-top: 4rem;
+  color: white;
+  font-size: 0.9rem;
+}
+.prodspecslist {
+  list-style: none;
+}
+.prodspecslist li {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.proddata {
+  font-size: 0.85rem;
 }
 
 @media only screen and (max-width: 1800px) {
