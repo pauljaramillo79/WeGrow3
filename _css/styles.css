@@ -782,6 +782,13 @@ footer {
   font-size: 0.8rem;
 }
 
+.prodwater {
+  position: absolute;
+  top: 40vh;
+  left: 10vh;
+  width: 80%;
+  z-index: -5;
+}
 .productcontainer {
   font-family: "Noto Sans JP", sans-serif;
   position: relative;
@@ -790,7 +797,10 @@ footer {
   min-height: 700px;
   display: flex;
   margin-top: 0;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
+  /* background-image: url(../_images/prodbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
 }
 .productnav {
   display: flex;
@@ -798,7 +808,7 @@ footer {
   /* min-height:400px; */
   background-color: rgba(27, 27, 27, 0.1);
   min-width: 21%;
-  max-height: 550px;
+  max-height: 510px;
   color: var(--blue);
 
   /* background-color: rgba(1, 1, 1, 0.5); */
@@ -806,10 +816,11 @@ footer {
 .productnav h1 {
   padding: 3rem;
   padding-bottom: 1rem;
+  color: white;
 }
 .prodnavheader {
   min-width: 100%;
-  min-height: 400px;
+  /* min-height: 400px; */
   /* background-image: url(../_images/strawberries.jpg); */
   background-size: contain;
   background-image: url(../_images/blueberries.jpg);
@@ -825,18 +836,22 @@ footer {
   margin-left: 0;
 }
 .prodsearchbar input {
-  padding: 0.3rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 0.7rem;
   border: none;
+  width: 100%;
 }
 .prodnavmenu {
   list-style: none;
   background-color: rgba(1, 1, 1, 0.7);
-  border-top: 1px white dashed;
+  border-top: 1px rgb(155, 155, 155) solid;
 }
+/* .prodnavmenu:hover {
+  border-bottom: 1px rgba(1, 1, 1, 0.7) dashed;
+} */
 .prodnavmenu li {
   padding: 0.7rem 3rem;
-  border-bottom: 1px dashed white;
+  border-bottom: 1px solid rgb(155, 155, 155);
   color: white;
   font-size: 0.9rem;
 }
@@ -844,22 +859,25 @@ footer {
   background-color: white;
   color: var(--green);
   cursor: pointer;
-  border-right: 1px solid rgba(27, 27, 27, 0.6);
-  border-left: 1px solid rgba(27, 27, 27, 0.6);
+  /* border: 1px rgba(1, 1, 1, 0.7) solid; */
+  /* border-right: 1px solid rgba(27, 27, 27, 0.6);
+  border-left: 1px solid rgba(27, 27, 27, 0.6); */
 }
 .productlist {
   display: flex;
   flex-direction: column;
   width: 60%;
-  background-color: red;
+  /* height: 100vh;
+  overflow-y: hidden; */
+  /* background-color: red; */
 }
 .productitem {
   display: flex;
   flex-direction: row;
   min-height: 250px;
   width: 100%;
-  background-color: white;
-  padding-right: 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding-right: 5rem;
 }
 .productitem:hover {
   background-color: rgb(224, 224, 224);
@@ -887,19 +905,27 @@ footer {
 }
 .productspecs {
   width: 20%;
-  height: 400px;
+  height: 450px;
   background-color: var(--blue);
-  padding-top: 4rem;
+  background-image: url(../_images/strawberries.jpg);
+  background-size: cover;
+  padding-top: 6rem;
   color: white;
   font-size: 0.9rem;
 }
 .prodspecslist {
   list-style: none;
+  background-color: rgba(1, 1, 1, 0.7);
+  padding: 2rem 2rem;
+}
+.prodspecslist h3 {
+  padding-bottom: 1rem;
 }
 .prodspecslist li {
-  padding: 0 3rem;
+  padding: 0.5rem 0rem;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid white;
 }
 .proddata {
   font-size: 0.85rem;
