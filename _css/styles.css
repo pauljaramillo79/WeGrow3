@@ -782,7 +782,19 @@ footer {
   transform: translate(-50%, -50%);
   font-size: 0.8rem;
 }
-
+.prodlanding {
+  min-height: 350px;
+  color: black;
+  width: 100%;
+  background-image: url(../_images/greenhouse.jpg);
+  background-size: contain;
+  /* background-position: bottom; */
+  -webkit-mask-image: url("../_images/prodmask.svg");
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("../_images/prodmask.svg");
+  z-index: 2;
+}
 .prodwater {
   position: absolute;
   top: 40vh;
@@ -793,12 +805,13 @@ footer {
 .productcontainer {
   font-family: "Noto Sans JP", sans-serif;
   position: relative;
+  top: -350px;
   width: 75%;
   margin: auto;
   min-height: 700px;
   display: flex;
   margin-top: 0;
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
   /* background-image: url(../_images/prodbackground.jpg);
   background-size: cover;
   background-repeat: no-repeat; */
@@ -809,7 +822,7 @@ footer {
   /* min-height:400px; */
   background-color: rgba(27, 27, 27, 0.1);
   min-width: 21%;
-  max-height: 510px;
+  max-height: 470px;
   color: var(--blue);
 
   /* background-color: rgba(1, 1, 1, 0.5); */
@@ -868,9 +881,12 @@ footer {
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 800px;
+  height: 100vh;
   overflow-y: scroll;
   position: relative;
+  margin: 0rem 2rem;
+  border-top: 7rem black solid;
+  /* top: 300px; */
   /* background-color: red; */
 }
 .productitem {
@@ -911,7 +927,7 @@ footer {
   background-color: var(--blue);
   background-image: url(../_images/strawberries.jpg);
   background-size: cover;
-  padding-top: 6rem;
+  padding-top: 7rem;
   color: white;
   font-size: 0.9rem;
 }
@@ -931,6 +947,58 @@ footer {
 }
 .proddata {
   font-size: 0.85rem;
+}
+.aboutuslanding {
+  background: url("../_images/hands.jpg");
+  width: 100vw;
+  /* max-height: 85vh; */
+  position: relative;
+  /* position: absolute;
+    top: 2vh; */
+  background-size: cover;
+  background-position: bottom;
+  -webkit-mask-image: url("../_images/aboutusmask.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url("../_images/aboutusmask.svg");
+  z-index: 2;
+  min-height: 800px;
+}
+.aboutus-contentwrap {
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  /* height: 1000px; */
+  position: relative;
+}
+.aboutuslanding-tagline {
+  /* width: 100vw; */
+  height: 40vh;
+}
+.aboutuslanding-tagline h1 {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  /* width: 100%; */
+}
+#pillars {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: -130px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+#pillars h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.pillar {
+  padding-bottom: 10rem;
 }
 
 @media only screen and (max-width: 1800px) {
