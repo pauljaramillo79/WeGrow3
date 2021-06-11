@@ -130,7 +130,7 @@ header {
   position: absolute;
   flex-flow: row;
   width: 100%;
-  top: 72px;
+  top: 80px;
   /* left: -7px; */
   z-index: 30;
   overflow-y: visible;
@@ -825,7 +825,7 @@ footer {
   /* min-height:400px; */
   background-color: rgba(27, 27, 27, 0.1);
   min-width: 21%;
-  max-height: 470px;
+  max-height: 300px;
   color: var(--blue);
   border-radius: 2rem;
 
@@ -851,15 +851,18 @@ footer {
 .prodsearchbar {
   padding: 0 3rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .prodsearchbar .mediaicon {
   margin-left: 0;
 }
 .prodsearchbar input {
-  padding: 0.3rem 0.8rem;
-  border-radius: 0.7rem;
-  border: none;
-  width: 100%;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(199, 199, 199);
+  /* border: none; */
+  width: 30%;
+  margin: auto;
 }
 .prodnavmenu {
   list-style: none;
@@ -895,7 +898,7 @@ footer {
   height: 100vh;
   overflow-y: scroll;
   position: relative;
-  margin: 1rem 2rem;
+  margin: 1rem 2rem 7rem 2rem;
   /* border-top: 7rem black solid; */
   /* top: 300px; */
   /* background-color: red; */
