@@ -179,12 +179,13 @@ header {
   /* position: absolute;
   top: 2vh; */
   background-size: cover;
-  -webkit-mask-image: url("../_images/mask2.svg");
-  -webkit-mask-size: cover;
+  background-position: 0 730px;
+  -webkit-mask-image: url("../_images/mask3.svg");
+  -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url("../_images/mask2.svg");
+  mask-image: url("../_images/mask3.svg");
   z-index: 2;
-  min-height: 800px;
+  min-height: 700px;
 }
 .landing-contentwrap {
   width: 65%;
@@ -196,7 +197,7 @@ header {
 }
 .landing-tagline {
   position: relative;
-  min-height: 800px;
+  min-height: 700px;
   width: 40%;
   /* left: 15%; */
   background-color: rgba(41, 41, 41, 0.8);
@@ -783,16 +784,17 @@ footer {
   font-size: 0.8rem;
 }
 .prodlanding {
-  min-height: 350px;
+  min-height: 600px;
   color: black;
   width: 100%;
-  background-image: url(../_images/greenhouse.jpg);
-  background-size: contain;
+  background-image: url(../_images/sunset.jpg);
+  background-size: cover;
+  background-position: 0px 750px;
   /* background-position: bottom; */
-  -webkit-mask-image: url("../_images/prodmask.svg");
-  -webkit-mask-size: cover;
+  -webkit-mask-image: url("../_images/aboutusmask.svg");
+  -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url("../_images/prodmask.svg");
+  mask-image: url("../_images/aboutusmask.svg");
   z-index: 2;
 }
 .prodwater {
@@ -805,7 +807,8 @@ footer {
 .productcontainer {
   font-family: "Noto Sans JP", sans-serif;
   position: relative;
-  top: -350px;
+  /* top: -350px; */
+  top: 30px;
   width: 75%;
   margin: auto;
   min-height: 700px;
@@ -824,6 +827,7 @@ footer {
   min-width: 21%;
   max-height: 470px;
   color: var(--blue);
+  border-radius: 2rem;
 
   /* background-color: rgba(1, 1, 1, 0.5); */
 }
@@ -841,6 +845,8 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 .prodsearchbar {
   padding: 0 3rem;
@@ -859,6 +865,8 @@ footer {
   list-style: none;
   background-color: rgba(1, 1, 1, 0.7);
   border-top: 1px rgb(155, 155, 155) solid;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 /* .prodnavmenu:hover {
   border-bottom: 1px rgba(1, 1, 1, 0.7) dashed;
@@ -868,6 +876,9 @@ footer {
   border-bottom: 1px solid rgb(155, 155, 155);
   color: white;
   font-size: 0.9rem;
+}
+.prodnavmenu li:last-child {
+  border-bottom: none;
 }
 .prodnavmenu li:hover {
   background-color: white;
@@ -880,12 +891,12 @@ footer {
 .productlist {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
   height: 100vh;
   overflow-y: scroll;
   position: relative;
-  margin: 0rem 2rem;
-  border-top: 7rem black solid;
+  margin: 1rem 2rem;
+  /* border-top: 7rem black solid; */
   /* top: 300px; */
   /* background-color: red; */
 }
@@ -893,9 +904,12 @@ footer {
   display: flex;
   flex-direction: row;
   min-height: 250px;
-  width: 100%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 1);
   padding-right: 5rem;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 3px lightgray, 1px 1px 1px lightgray;
 }
 .productitem:hover {
   background-color: rgb(224, 224, 224);
@@ -930,6 +944,7 @@ footer {
   padding-top: 7rem;
   color: white;
   font-size: 0.9rem;
+  border-radius: 2rem;
 }
 .prodspecslist {
   list-style: none;
@@ -972,11 +987,34 @@ footer {
   /* height: 1000px; */
   position: relative;
 }
+.prod-contentwrap {
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  /* height: 1000px; */
+  position: relative;
+}
 .aboutuslanding-tagline {
   /* width: 100vw; */
   height: 35vh;
 }
+.prodlanding-tagline {
+  /* width: 100vw; */
+  height: 35vh;
+}
 .aboutuslanding-tagline h1 {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  font-size: 4rem;
+  width: 100%;
+}
+.prodlanding-tagline h1 {
   display: inline-block;
   position: absolute;
   top: 50%;
